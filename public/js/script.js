@@ -1,14 +1,3 @@
-// // Change style of navbar on scroll
-// window.onscroll = function() {myFunction()};
-// function myFunction() {
-//     var navbar = document.getElementById("myNavbar");
-//     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-//         navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-//     } else {
-//         navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-//     }
-// }
-
 // Used to toggle the menu on small screens when clicking on the menu button
 function toggleFunction() {
     var x = document.getElementById("navDemo");
@@ -33,8 +22,57 @@ $(".scroll-up").click(function() {
         'slow');
 });
 
+function sendMail(form) {
+    var name = $('#name').val();
+    var email = $('#email').val();
+    var message = $('#message').val();
+    $("form[name='contact']")[0].reset();
+    $("#success-label").attr('class', '');
 
-// Import and processing from treehouse// edit username here
+    var data = {
+        name: name,
+        email: email,
+        message: message,
+    }
+
+	$.ajax({
+		type: 'POST',
+		data: data,
+        url: '/api/sendMail',
+        success: function(data) {
+            console.log('success');
+            console.log(JSON.stringify(data));
+        }
+    });
+}
+
+  // Initialize form validation on the registration form.
+$(function() {
+  $("form[name='contact']").validate({
+    rules: {
+      name: "required",
+      email: {
+        required: true,
+        email: true
+      },
+      message: "required"
+    },
+    // Specify validation error messages
+    messages: {
+      name: "Skriv inn et navn",
+      email: "Skriv inn en gyldig e-post adresse",
+      message: "Skriv inn en melding",
+    },
+    onkeyup: function() {
+        $("#success-label").attr('class', 'w3-hide');
+    },
+    submitHandler: function(form) {
+      sendMail(form);
+    }
+  });
+});
+
+// Import and processing from treehouse
 $.ajax('https://teamtreehouse.com/joachimeivindsen.json')
   .done(function(data) {
  // pull was a success

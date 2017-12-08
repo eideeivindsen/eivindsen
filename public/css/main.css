@@ -31,6 +31,7 @@ body, html {
     min-height: 400px;
 }
 
+.w3-opacity-minimal {opacity: 0.85}
 .w3-margin-0 {margin: 0px;}
 .w3-wide {letter-spacing: 10px;}
 .w3-xwide {letter-spacing: 20px;}

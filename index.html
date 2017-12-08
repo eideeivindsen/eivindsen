@@ -6,16 +6,17 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="assets/css/main.css">
-<link rel="shortcut icon" type="image/png" href="./assets/img/favicon.png"/>
+<link rel="stylesheet" type="text/css" href="/css/main.css">
+<link rel="shortcut icon" type="image/png" href="/img/favicon.png"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="assets/js/script.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
+<script src="/js/script.js" async></script>
 <body>
 
-<!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+<!-- First Parallax Image with Name Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-minimal" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><span class="w3-hide-small">JOACHIM</span> EIVINDSEN</span>
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-opacity-minimal"><span class="w3-hide-small">JOACHIM EIVINDSEN</span><span class="w3-hide-medium w3-hide-large">J. EIVINDSEN</span></span>
   </div>
   <div class="w3-display-bottommiddle scroll-down w3-opacity w3-hover-opacity-off" style="white-space:nowrap;">
     <h5 class="w3-center w3-narrower w3-text-white">BLI KJENT MED MEG</h5>
@@ -27,19 +28,23 @@
 <div class="w3-content w3-container w3-padding-64" id="about">
   <h3 class="w3-center">OM MEG</h3>
   <p class="w3-center"><em>Webutvikler</em></p>
+
+  <!-- Hide this text on large and medium devices -->
   <div class="w3-hide-large w3-hide-medium w3-center">
-      <p class="w3-margin-0"><b><i class="fa fa-user w3-margin-right"></i>JOACHIM EIVINDSEN</b></p>
-      <p class="w3-margin-0"><i class="fa fa-transgender w3-margin-right"></i>Mann</p>
-      <p class="w3-margin-0"><i class="fa fa-child w3-margin-right"></i>15.04.1995</p>
+      <p class="w3-margin-0 w3-left-align w3-margin-left"><b><i class="fa fa-user w3-margin-right"></i>JOACHIM EIVINDSEN</b></p>
+      <p class="w3-margin-0 w3-left-align w3-margin-left"><i class="fa fa-transgender w3-margin-right"></i>Mann</p>
+      <p class="w3-margin-0 w3-left-align w3-margin-left"><i class="fa fa-child w3-margin-right"></i>15.04.1995</p>
       <p>Jeg er en 22 år gammel student som studerer bachelor i Informatikk ved NTNU i Trondheim. Opprinnelig kommer jeg fra den vakre byen Arendal på Sørlandet, der jeg bodde frem til jeg flyttet i 2014.
          Som person er jeg full av energi og liker å være i aktivitet, blant annet som håndballspiller for NTNU sitt studentlag. Har gjennom de siste årene utviklet en
          stor interesse for webutvikling og prøver konstant å tilnærme meg nye ferdigheter og kunnskap innenfor fagområdet. Familie, helse og venner er viktige kjerneverdier hos meg som person, og er med på å forme mine hverdagslige aktiviteter gjennom blant annet trening og sosialisering.
          </p>
       <p>Jeg er alltid på utkikk etter nye faglig utfordring, så ta gjerne kontakt hvis du lurer på noe.</p>
   </div>
+
+  <!-- Profile Picture always displayed -->
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
-      <img src="./assets/img/profile-picture.jpg" class="w3-round w3-image w3-opacity" alt="Photo of Me" width="400" height="100">
+      <img src="/img/profile-picture.jpg" class="w3-round w3-image w3-opacity-min" alt="Photo of Me" width="400" height="100">
     </div>
 
     <!-- Hide this text on small devices -->
@@ -56,6 +61,7 @@
   </div>
 </div>
 
+<!-- Container (Utdanning Section) -->
 <div class="w3-container w3-light-grey">
   <div class="w3-content w3-container w3-padding-64 w3-opacity" id="education">
     <h3 class="w3-center">UTDANNING</h3>
@@ -76,14 +82,14 @@
   </div>
 </div>
 
-<!-- Second Parallax Image with Portfolio Text -->
+<!-- Second Parallax Image with Ferdigheter Text -->
 <div class="bgimg-2 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
     <span class="w3-xxlarge w3-text-white w3-wide">FERDIGHETER</span>
   </div>
 </div>
 
-<!-- Container (Portfolio Section) -->
+<!-- Container (Ferdigheter Section) -->
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
   <h3 class="w3-center">MINE PROSJEKTER</h3>
   <p class="w3-center"><em>Ingen prosjekter å vise til for øyeblikket.</em></p><br>
@@ -99,14 +105,14 @@
 </div>
 </div>
 
-<!-- Third Parallax Image with Portfolio Text -->
+<!-- Third Parallax Image with Kontakt Text -->
 <div class="bgimg-3 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
      <span class="w3-xxlarge w3-text-white w3-wide">KONTAKT</span>
   </div>
 </div>
 
-<!-- Container (Contact Section) -->
+<!-- Container (Kontakt Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
   <h3 class="w3-center">TA KONTAKT</h3>
   <p class="w3-center"><em>Er det noe du lurer på? Bruk skjemaet under til å ta kontakt.</em></p>
@@ -118,17 +124,17 @@
         <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Telefon: +47 452 70 775<br>
         <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Epost: joachim.eivindsen@gmail.com<br>
       </div>
-      <form action="mailto:joachim.eivindsen@gmail.com" target="_blank">
+      <form action="" name="contact" target="_blank">
         <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></input>
+          <div class="w3-half w3-padding-small">
+            <input class="w3-input w3-border" type="text" placeholder="Name" name="name" id="name" required></input>
           </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></input>
+          <div class="w3-half w3-padding-small">
+            <input class="w3-input w3-border" type="text" placeholder="Email" name="email" id="email" required></input>
           </div>
         </div>
-        <textarea class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></textarea>
-        <input class="w3-input w3-border w3-hide" type="text" placeholder="Spamwall" required name="Spamwall"></input>
+        <textarea class="w3-input w3-border" type="text" placeholder="Message" name="message" id="message" required></textarea>
+        <label class="w3-hide" id="success-label">Meldingen din har blitt sendt!</label>
         <button class="w3-button w3-khaki w3-right w3-section w3-hover-khaki w3-hover-opacity" type="submit">
           <i class="fa fa-paper-plane"></i> SEND MELDING
         </button>

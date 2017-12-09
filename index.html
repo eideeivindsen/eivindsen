@@ -44,7 +44,7 @@
   <!-- Profile Picture always displayed -->
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
-      <img src="/img/profile-picture.jpg" class="w3-round w3-image w3-opacity-min" alt="Photo of Me" width="400" height="100">
+      <img src="/img/profile-picture.jpg" class="w3-round w3-image w3-opacity-minimal" alt="Photo of Me" width="400" height="100">
     </div>
 
     <!-- Hide this text on small devices -->
@@ -52,7 +52,7 @@
       <p class="w3-margin-0"><b><i class="fa fa-user w3-margin-right"></i>JOACHIM EIVINDSEN</b></p>
       <p class="w3-margin-0"><i class="fa fa-transgender w3-margin-right"></i>Mann</p>
       <p class="w3-margin-0"><i class="fa fa-child w3-margin-right"></i>15.04.1995</p>
-      <p>Jeg er en 22 år gammel student som studerer bachelor i Informatikk ved NTNU i Trondheim. Opprinnelig kommer jeg fra den vakre byen Arendal på Sørlandet, der jeg bodde frem til jeg flyttet i 2014.
+      <p>Jeg er en 22 år gammel student som studerer bachelor i Informatikk ved NTNU i Trondheim. Opprinnelig kommer jeg fra den vakre sørlandsbyen Arendal, der jeg bodde frem til jeg flyttet i 2014.
          Som person er jeg full av energi og liker å være i aktivitet, blant annet som håndballspiller for NTNU sitt studentlag. Har gjennom de siste årene utviklet en
          stor interesse for webutvikling og prøver konstant å tilnærme meg nye ferdigheter og kunnskap innenfor fagområdet. Familie, helse og venner er viktige kjerneverdier hos meg som person, og er med på å forme mine hverdagslige aktiviteter gjennom blant annet trening og sosialisering.
          </p>
@@ -63,14 +63,14 @@
 
 <!-- Container (Utdanning Section) -->
 <div class="w3-container w3-light-grey">
-  <div class="w3-content w3-container w3-padding-64 w3-opacity" id="education">
-    <h3 class="w3-center">UTDANNING</h3>
-    <p class="w3-center"><em>Informatikk - NTNU Trondheim</em></p>
+  <div class="w3-content w3-container w3-padding-64" id="education">
+    <h3 class="w3-center w3-opacity">UTDANNING</h3>
+    <p class="w3-center w3-opacity"><em>Informatikk - NTNU Trondheim</em></p>
     <div class="w3-row">
-      <div class="w3-col m4 w3-center w3-hide-small w3-padding-32">
-        <p><b><i class="fa fa-university university-icon w3-text-khaki w3-margin-top"></i></b></p><br>
+      <div class="w3-col m5 w3-center w3-padding-32">
+        <img src="/img/university.jpg" class="w3-round w3-image w3-image-round w3-opacity-min" alt="Photo of Me" width="260" height="260">
       </div>
-      <div class="w3-col m8  w3-padding-large">
+      <div class="w3-col m7  w3-padding-large w3-opacity">
         <p>For øyeblikket studerer jeg ved NTNU avd. Trondheim, der jeg tar en bachelor i Informatikk.
             Jeg startet på graden høsten 2015 og er ferdig kommende vår. Sikter på å fortsette med en 2-årig master
              i Kunstig Intelligens eller Programvaresystemer allerede høsten 2018.
@@ -85,24 +85,62 @@
 <!-- Second Parallax Image with Ferdigheter Text -->
 <div class="bgimg-2 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">FERDIGHETER</span>
+    <span class="w3-xxlarge w3-text-white w3-wide w3-hide-small">FERDIGHETER</span>
+    <span class="w3-xlarge w3-text-white w3-wide w3-hide-large w3-hide-medium">FERDIGHETER</span>
   </div>
 </div>
 
 <!-- Container (Ferdigheter Section) -->
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
   <h3 class="w3-center">MINE PROSJEKTER</h3>
-  <p class="w3-center"><em>Ingen prosjekter å vise til for øyeblikket.</em></p><br>
+  <p class="w3-center"><em>Følgende prosjekter har blitt gjennomført det siste året.</em></p><br>
+
+    <!-- Section for displaying Warewolf -->
+    <div class="w3-row">
+      <div class="w3-col m7 w3-center w3-padding-large">
+        <img src="/img/Warewolf.png" class="w3-round w3-image w3-opacity-min" alt="Screenshot of project 3" width="600" height="200">
+      </div>
+      <div class="w3-col m5 w3-padding-large">
+        <p class="w3-margin-0"><b><i class="fa fa-laptop w3-margin-right"></i>Warewolf</b></p>
+        <p class="w3-margin-0"><i class="fa fa-wrench w3-margin-right"></i>Angular, Node, Express, MongoDB, Typescript</p>
+        <p>Siden ble utviklet som en del av utdanningen i IT2810. Siden holder styr på produkter og lagerstatus for varer. Dynamisk lasting av produkter fra database og brukerautentisering er noen av funksjonene siden tilbyr. </p>
+        <button disabled class="w3-button w3-khaki w3-right w3-section w3-hover-khaki w3-hover-opacity">
+          <i class="fa fa-external-link"></i> BESØK SIDEN
+        </button>
+      </div>
+    </div>
+
+    <hr></hr>
+
+    <!-- Section for displaying Personal Information Manager -->
+    <div class="w3-row">
+        <div class="w3-col m7 w3-center w3-padding-large w3-hide-large w3-hide-medium">
+          <img src="/img/Prosjekt3.png" class="w3-round w3-image w3-opacity-min" alt="Screenshot of project 3" width="600" height="200">
+        </div>
+      <div class="w3-col m5 w3-padding-large">
+        <p class="w3-margin-0"><b><i class="fa fa-laptop w3-margin-right"></i>Personal Information Manager</b></p>
+        <p class="w3-margin-0"><i class="fa fa-wrench w3-margin-right"></i>React, HTML, CSS, Javascript, Material UI</p>
+        <p>Siden ble utviklet som en del av utdanningen i IT2810. Siden holder styr på notater, avtaler og gjøremål og er utviklet med dashboard lignenede design. </p>
+        <a href="https://it2810-group13-3.herokuapp.com/" target="_blank"><button class="w3-button w3-khaki w3-right w3-section w3-hover-khaki w3-hover-opacity">
+          <i class="fa fa-external-link"></i> BESØK SIDEN
+      </button></a>
+      </div>
+      <div class="w3-col m7 w3-center w3-padding-large w3-hide-small">
+        <img src="/img/Prosjekt3.png" class="w3-round w3-image w3-opacity-min" alt="Screenshot of project 3" width="600" height="200">
+      </div>
+    </div>
+
   <hr></hr>
+
+  <!-- Mine kurs with Treehouse stats -->
   <h3 class="w3-center">MINE KURS</h3>
   <p class="w3-center"><em>Ferdigheter basert på opplæring fra Team Treehouse:</em></p><br>
   <div class="team-treehouse w3-center">
-    <div class="pieChart group">
+    <div class="group">
       <div class="pie"></div>
       <div class="legend"></div>
     </div>
-  </a>
-</div>
+  </div>
 </div>
 
 <!-- Third Parallax Image with Kontakt Text -->
@@ -115,7 +153,7 @@
 <!-- Container (Kontakt Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
   <h3 class="w3-center">TA KONTAKT</h3>
-  <p class="w3-center"><em>Er det noe du lurer på? Bruk skjemaet under til å ta kontakt.</em></p>
+  <p class="w3-center"><em>Er det noe du lurer på? Bruk skjemaet under og ta kontakt i dag.</em></p>
 
   <div class="w3-row w3-padding-32 w3-section">
     <div class="w3-col m12 w3-panel">

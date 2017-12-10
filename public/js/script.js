@@ -1,3 +1,6 @@
+// Set current year as copyright
+$(".copyright").append(new Date().getFullYear() + " Joachim Eivindsen");
+
 // Scrolling down from landing-page
 $(".scroll-down").click(function() {
     $('html,body').animate({

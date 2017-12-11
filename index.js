@@ -26,8 +26,8 @@ app.post('/api/sendMail', function(req,res){
             secure: false,
             port: 587,
             auth: {
-                user: 'ggq6owlbdhqyeoqx@ethereal.email',
-                pass: 'awjwBRzfswgcjVdr3p'
+                user: 'fkm2cdwkconxlfzu@ethereal.email',
+                pass: 'VbtvDzDM6X99begdWD'
             },
             tls: {
                 rejectUnauthorized: false

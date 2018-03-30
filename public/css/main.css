@@ -15,7 +15,7 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-    background-image: url('../img/frontpage.jpg');
+    background-image: url('../img/forsidebilde.jpg');
     min-height: 100%;
 }
 
@@ -31,7 +31,7 @@ body, html {
     min-height: 400px;
 }
 
-.w3-opacity-minimal {opacity: 0.85;}
+.w3-opacity-minimal {opacity: 0.95;}
 .w3-image-round {border-radius: 50%;}
 .w3-margin-0 {margin: 0px;}
 .w3-wide {letter-spacing: 10px;}

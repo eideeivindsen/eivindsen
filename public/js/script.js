@@ -40,6 +40,38 @@ function sendMail(form) {
     });
 }
 
+function mailer(form) {
+    // Serialize the form data.
+
+    var formData = $(form).serialize();
+    console.log(form);
+    console.log(formData);
+    var form1 = $('#contact');
+    var formData1 = $(form).serialize();
+    console.log(form1);
+    console.log(formData1);
+    // Submit the form using AJAX.
+    $.ajax({
+        type: 'POST',
+        url: 'mailer.php',
+        data: formData
+    }).done(function(response) {
+        // Make sure that the formMessages div has the 'success' class.
+
+
+        // Set the message text.
+
+        // Clear the form.
+        $('#name').val('');
+        $('#email').val('');
+        $('#message').val('');
+    }).fail(function(data) {
+        // Make sure that the formMessages div has the 'error' class.
+
+        // Set the message text.
+    });
+}
+
   // Initialize form validation on the registration form.
 $(function() {
   $("form[name='contact']").validate({
@@ -61,7 +93,7 @@ $(function() {
         $("#success-label").attr('class', 'w3-hide');
     },
     submitHandler: function(form) {
-      sendMail(form);
+        mailer(form);
     }
   });
 });

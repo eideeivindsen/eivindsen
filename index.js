@@ -35,6 +35,11 @@ app.get('/', function(req,res){
   res.sendFile(path.join(__dirname + '/index.html'));
 });
 
+// Set nikolai route
+app.get('/nikolai', function(req,res){
+  res.sendFile(path.join(__dirname + '/nikolai.html'));
+});
+
 app.post('/mailer.php' ,function ( req, res ){
     res.render("/mailer.php");
 });
